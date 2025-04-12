@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inicio de Sesión - Tienda Online</title>
+    <link rel="stylesheet" href="./css/style_sesion.css">
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Iniciar Sesión</h2>
+    <input type="text" id="usuario" placeholder="Nombre de usuario" />
+    <input type="password" id="contrasena" placeholder="Contraseña" />
+    <button onclick="iniciarSesion()">Ingresar</button>
+    <div class="link" onclick="mostrarModal()">¿No tienes cuenta? Regístrate</div>
+    <p id="mensaje"></p>
+  </div>
+
+  <!-- Modal de Registro -->
+  <div class="modal" id="modalRegistro">
+    <div class="modal-content">
+      <span class="close" onclick="cerrarModal()">&times;</span>
+      <h3>Crear cuenta</h3>
+      <input type="text" id="nuevoUsuario" placeholder="Nuevo usuario" />
+      <input type="password" id="nuevaContrasena" placeholder="Contraseña" />
+      <button onclick="registrar()">Registrar</button>
+    </div>
+  </div>
+
+  
+
+</body>
+</html>

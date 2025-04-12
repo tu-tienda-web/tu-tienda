@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="./css/style_inicio.css">
+</head>
+<body>
+    <div class="tienda">
+        <h1>Tienda Online</h1>
+        <p>¡Descubre una experiencia de compra única desde la comodidad de tu hogar! En nuestra tienda online encontrarás productos seleccionados con amor, calidad garantizada y precios que se ajustan a tu bolsillo.</p>
+    </div>
+    <!--Carrito-->
+    <div id="carrito-icono">
+        <img src="./img/carrito.svg" alt="Carrito" width="40" />
+        <span id="contador-carrito">0</span>
+      </div>
+    <!--Carrito Flotante-->
+    <div id="carrito-ventana">
+        <button id="cerrar-carrito">×</button>
+        <h2>Tu Carrito</h2>
+        <div id="carrito-lista"></div>
+    </div>
+    <!-- Productos -->
+     <div class="contain_producto">
+        <div class="producto">
+            <img src="./img/pc.jpeg" alt="Imagen de PC Gamer">
+            <p>Computadoras PC Gamer PC YA Ryzen 7 | Potencia y calidad</p>
+            <h3>S/3,599</h3>
+            <button class="btn-ver" 
+                    data-imagen="./img/pc.jpeg"
+                    data-producto="PC Gamer Ryzen 7"
+                    data-precio="S/3,599"
+                    data-descripcion="Esta PC cuenta con procesador Ryzen 7, 16GB RAM, RTX 3060, SSD 1TB. Ideal para gaming y edición.">Ver Producto</button>
+        </div>
+
+        <div class="producto">
+            <img src="./img/audifono.jpg" alt="Imagen de PC Gamer">
+            <p>Audífono Diadema BT5.3 70Hrs</p>
+            <h3>S/160.93</h3>
+            <button class="btn-ver" 
+                    data-imagen="./img/audifono.jpg"
+                    data-producto="Audifono diadema"
+                    data-precio="S/160.93"
+                    data-descripcion="Esta PC cuenta con procesador Ryzen 7, 16GB RAM, RTX 3060, SSD 1TB. Ideal para gaming y edición.">Ver Producto</button>
+        </div>
+
+        <div class="producto">
+            <img src="./img/reloj.jpg" alt="Imagen de PC Gamer">
+            <p>Reloj Pulsera Inteligente M6</p>
+            <h3>S/24.90</h3>
+            <button class="btn-ver" 
+                    data-imagen="./img/reloj.jpg"
+                    data-producto="Reloj Inteligente"
+                    data-precio="S/25.90"
+                    data-descripcion="Esta PC cuenta con procesador Ryzen 7, 16GB RAM, RTX 3060, SSD 1TB. Ideal para gaming y edición.">Ver Producto</button>
+        </div>
+
+        <div class="producto">
+            <img src="./img/ps5.jpg" alt="Imagen de PC Gamer">
+            <p>Consola Play Station 5 Standard Spider Man 2 Bundle</p>
+            <h3>S/2450.90</h3>
+            <button class="btn-ver" 
+                    data-imagen="./img/ps5.jpg"
+                    data-producto="Consola PS5 con Spider Man 2"
+                    data-precio="S/2450"
+                    data-descripcion="Esta PC cuenta con procesador Ryzen 7, 16GB RAM, RTX 3060, SSD 1TB. Ideal para gaming y edición.">Ver Producto</button>
+        </div>
+
+        <div class="producto">
+            <img src="./img/psvita.jpg" alt="Imagen de PC Gamer">
+            <p>auténtica estación de juegos sony ps vita slim 2000 consola wifi - caqui</p>
+            <h3>S/500.90</h3>
+            <button class="btn-ver" 
+                    data-imagen="./img/psvita.jpg"
+                    data-producto="Estacion de Juegos Sony PSVITA"
+                    data-precio="S/200.90"
+                    data-descripcion="Esta PC cuenta con procesador Ryzen 7, 16GB RAM, RTX 3060, SSD 1TB. Ideal para gaming y edición.">Ver Producto</button>
+        </div>
+
+        <div class="producto">
+            <img src="./img/teclado.jpg" alt="Imagen de PC Gamer">
+            <p>TECLADO GAMER REDRAGON ZIGGS K669-RGB SWITCH RED RGB</p>
+            <h3>S/190</h3>
+            <button class="btn-ver" 
+                    data-imagen="./img/teclado.jpg"
+                    data-producto="Teclado gamer REDDRAGON"
+                    data-precio="S/190"
+                    data-descripcion="Esta PC cuenta con procesador Ryzen 7, 16GB RAM, RTX 3060, SSD 1TB. Ideal para gaming y edición.">Ver Producto</button>
+        </div>
+
+        <div class="producto">
+            <img src="./img/mouse.jpg" alt="Imagen de PC Gamer">
+            <p>Mouse Gamer Logitech G502 LIGTHSPEED WIRELESS BLACK</p>
+            <h3>S/358</h3>
+            <button class="btn-ver" 
+                    data-imagen="./img/mouse.jpg"
+                    data-producto="Mpuse Gamer Logitech G502"
+                    data-precio="S/358"
+                    data-descripcion="Esta PC cuenta con procesador Ryzen 7, 16GB RAM, RTX 3060, SSD 1TB. Ideal para gaming y edición.">Ver Producto</button>
+        </div>
+
+        <div class="producto">
+            <img src="./img/laptop.jpg" alt="Imagen de PC Gamer">
+            <p>LAPTOP GAMER ASUS ROG G513IC-HN046T</p>
+            <h3>S/5900</h3>
+            <button class="btn-ver" 
+                    data-imagen="./img/laptop.jpg"
+                    data-producto="Laptop Gamer Asus Rog G513IC"
+                    data-precio="S/358"
+                    data-descripcion="Esta PC cuenta con procesador Ryzen 7, 16GB RAM, RTX 3060, SSD 1TB. Ideal para gaming y edición.">Ver Producto</button>
+        </div>
+        </div>
+
+     </div>
+</body>
+<!--Ventana Flotante-->
+<div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="cerrar">&times;</span>
+      <div class="modal-body">
+        <img id="modal-img" src="" alt="Producto" />
+        <div class="modal-info">
+          <h2 id="modal-titulo"></h2>
+          <p id="modal-descripcion"></p>
+          <h3 id="modal-precio"></h3>
+  
+          <div class="cantidad-container">
+            <button id="restar">-</button>
+            <input type="number" id="cantidad" value="1" min="1">
+            <button id="sumar">+</button>
+          </div>
+          <button id="agregar-carrito">Agregar al carrito 🛒</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>
