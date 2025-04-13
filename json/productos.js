@@ -34,4 +34,16 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
+    // Sumar cantidad
+  document.getElementById("sumar").addEventListener("click", () => {
+    cantidadInput.value = parseInt(cantidadInput.value) + 1;
+  });
+
+  // Restar cantidad
+document.getElementById("restar").addEventListener("click", () => {
+    if (cantidadInput.value > 1) {
+      cantidadInput.value = parseInt(cantidadInput.value) - 1;
+    }
+  });
+
   });
