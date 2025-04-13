@@ -39,7 +39,7 @@ function mostrarModal() {
 
     if (encontrado) {
       localStorage.setItem("usuarioActivo", JSON.stringify(encontrado));
-      window.location.href = "bienvenido.html";
+      window.location.href = "index.html";
     } else {
       mensaje.textContent = "Credenciales incorrectas.";
     }
