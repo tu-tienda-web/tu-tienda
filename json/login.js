@@ -4,6 +4,7 @@ function mostrarModal() {
 
   function cerrarModal() {
     document.getElementById("modalRegistro").style.display = "none";
+  }
 
   function registrar() {
     const user = document.getElementById("nuevoUsuario").value.trim();
@@ -27,4 +28,20 @@ function mostrarModal() {
     }
   }
 
+  function iniciarSesion() {
+    const user = document.getElementById("usuario").value.trim();
+    const pass = document.getElementById("contrasena").value.trim();
+    const mensaje = document.getElementById("mensaje");
+
+    let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+    const encontrado = usuarios.find(u => u.usuario === user && u.contrasena === pass);
+
+    if (encontrado) {
+      localStorage.setItem("usuarioActivo", JSON.stringify(encontrado));
+      window.location.href = "bienvenido.html";
+    } else {
+      mensaje.textContent = "Credenciales incorrectas.";
+    }
+   }
   
