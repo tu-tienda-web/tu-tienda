@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const imagen = document.getElementById("modal-img").src;
       const cantidad = parseInt(document.getElementById("cantidad").value);
   
-      
+      // Buscar si ya existe
       const index = carrito.findIndex(p => p.nombre === nombre && p.imagen === imagen);
       if (index !== -1) {
         carrito[index].cantidad += cantidad;

@@ -282,3 +282,13 @@ body {
   top: 5px;
   right: 5px;
 }
+
+#agregar-carrito {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
